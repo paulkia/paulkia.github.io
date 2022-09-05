@@ -1,0 +1,34 @@
+html {
+    --col: rgb(68, 199, 216);
+    --darkCol: rgb(139, 216, 68);
+}
+
+a:any-link {
+    color: var(--col);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: var(--darkCol);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace !important;
+}
+
+
+.tooltip {
+    font-family: 'Ubuntu Mono', monospace !important;
+}
+
+.nav-tabs .nav-link {
+    color: var(--col);
+}
+
+.nav-tabs .nav-link:hover, a.list-group-item:hover {
+    color: var(--darkCol);
+    /* border-color: var(--darkCol); */
+}
