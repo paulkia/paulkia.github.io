@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Tabs, Tab, ListGroup, Image, Row, Col } from 'react-bootstrap'
 import { Logo } from './Link'
 import email from './data/atsmall.png'
-import { FakeymonDesc, PortfolioDesc, SpaceshipDesc, GoogleDesc, TeachingDesc, AmazonDesc, JonckersDesc, TravelPhotographyDesc, PuffinDesc, OtherDesc, EducationDesc } from './Description'
+import { links, FakeymonDesc, PortfolioDesc, SpaceshipDesc, GoogleDesc, TeachingDesc, AmazonDesc, JonckersDesc, TravelPhotographyDesc, PuffinDesc, OtherDesc, EducationDesc } from './Description'
 
 function Projects() {
   return (
@@ -129,18 +129,5 @@ function App() {
 /* UTIL */
 
 const age = new Date(new Date() - new Date(2000, 9, 27)).getFullYear() - 1970
-
-const links = {
-  birdboozled: 'https://www.instagram.com/birdboozled/',
-  fakeymon: 'https://github.com/paulkia/Fakeymon2',
-  kernelFilm: 'https://www.instagram.com/kernelfilm/',
-  maxime: 'https://github.com/MaxDahan',
-  paulGithub: 'https://www.github.com/paulkia/',
-  paulLinkedIn: 'https://www.linkedin.com/in/paulkia/',
-  portfolio: 'https://github.com/paulkia/paulkia.github.io',
-  puffin: 'https://ebird.org/species/atlpuf',
-  spaceship: 'https://github.com/MaxDahan/Spaceship',
-  reactBootstrap: 'https://react-bootstrap.github.io/',
-}
 
 export default App;

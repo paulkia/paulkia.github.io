@@ -90,7 +90,10 @@ export function AmazonDesc() {
             culture. From my extremely limited view of the company, I only have positive
             things to say. My manager seemed to do a great job making all team members
             feel comfortable and included, and many co-workers were good friends. People
-            organized after work water-skiing and BBQ during my internship. 10/10
+            organized after work water-skiing and BBQ during my internship. <BR />
+            That being said, I did not accept the return offer. While
+            my teammates were fantastic and worked on interesting projects, Amazon's
+            offer was non-negotiable and less competitive than others.
         </span>
     )
 }
@@ -209,7 +212,9 @@ export function OtherDesc() {
     )
 }
 
-const links = {
+/* UTIL */
+
+export const links = {
     appartamento: 'https://rocket-espresso.com/appartamento.html',
     birdboozled: 'https://www.instagram.com/birdboozled/',
     emerald: 'https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Emerald_Version',
@@ -230,8 +235,9 @@ const links = {
 
 function BR() {
     return (
-        <div>
+        <span>
             <br />
-        </div>
+            <br />
+        </span>
     )
 }
