@@ -1,6 +1,6 @@
 html {
-    --col: rgb(68, 199, 216);
-    --darkCol: rgb(139, 216, 68);
+    --col: rgb(0, 128, 255);
+    --darkCol: rgb(0, 0, 0);
 }
 
 a:any-link {

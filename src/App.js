@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Tabs, Tab, ListGroup, Image, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap'
-import { Logo, Link } from './Link'
+import { Tabs, Tab, ListGroup, Image, Row, Col } from 'react-bootstrap'
+import { Logo } from './Link'
 import email from './data/atsmall.png'
-import {FakeymonDesc, PortfolioDesc, SpaceshipDesc, GoogleDesc, TeachingDesc, AmazonDesc, JonckersDesc, TravelPhotographyDesc, PuffinDesc, UnlikeDesc, EducationDesc} from './Description'
+import { FakeymonDesc, PortfolioDesc, SpaceshipDesc, GoogleDesc, TeachingDesc, AmazonDesc, JonckersDesc, TravelPhotographyDesc, PuffinDesc, OtherDesc, EducationDesc } from './Description'
 
 function Projects() {
   return (
@@ -46,7 +46,7 @@ function Hobbies() {
     <div>
       <TravelPhotographyDesc />
       <PuffinDesc />
-      <UnlikeDesc />
+      <OtherDesc />
     </div>
   )
 }
@@ -64,7 +64,8 @@ function About() {
     'Projects': <Projects />,
     'Previous Roles': <PreviousRoles />,
     'Hobbies': <Hobbies />,
-    'Education': <Education />}
+    'Education': <Education />
+  }
 
   let [listGroupItems, tabPanes] = [[], []];
   Object.keys(pages).forEach(page => {
@@ -91,7 +92,7 @@ function About() {
             </ListGroup>
           </Col>
           <Col>
-            <Tab.Content>
+            <Tab.Content className='mt-lg-0 mt-md-0 mt-3'>
               {tabPanes}
             </Tab.Content>
           </Col>
@@ -103,15 +104,13 @@ function About() {
 
 function Contact() {
   return (
-    <div>
-      <Image src={email}></Image>
-    </div>
+    <Image src={email}></Image>
   )
 }
 
 function App() {
   return (
-    <div className='p-5 code'>
+    <div className='p-lg-5 p-md-5 p-3'>
       <Tabs
         className="mb-3"
         transition={false}

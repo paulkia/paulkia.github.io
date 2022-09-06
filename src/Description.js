@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Tabs, Tab, ListGroup, Image, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap'
+import { Image, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { Logo, Link } from './Link'
-import email from './data/atsmall.png'
 import puffin from './data/puffin.jpg'
 import uw from './data/uw.png'
 import bablusar from './data/bablusar.jpg'
@@ -14,7 +13,7 @@ export function FakeymonDesc() {
         <span>
             <Logo address={links['fakeymon']} type='github' /> A simple text-based RPG in the command-line resembling Pokemon.
             It spans 8 classes, over 1,000 lines of code, and is 100% written in Java.
-            <Col className='col-4 mt-3 container'>
+            <Col className='col-lg-5 col-md-5 mt-3 container'>
                 <Image src={bablusar} fluid thumbnail />
             </Col>
         </span>
@@ -40,7 +39,7 @@ export function SpaceshipDesc() {
             Please note that <Link address={links['maxime']} text='Maxime' /> was the main
             software engineer behind the project, while I primarily assisted with artwork
             and sound.
-            <Col className='col-5 mt-3 container'>
+            <Col className='col-lg-6 col-md-6 mt-3 container'>
                 <Image src={spaceship} fluid thumbnail />
             </Col>
         </span>
@@ -71,7 +70,7 @@ export function TeachingDesc() {
             1-1 meetings with students, presenting to classrooms, grading, assigning and
             recommending a variety of lessons, coordinating and meeting with other
             teacher-assistants and professors, etc. I had an amazing time as a teacher
-            assistant at the Allen school and built numerous impactful friendships and
+            assistant at the Allen School and built numerous impactful friendships and
             connections here. In my opinion, it is very difficult to make the most of
             the University's computer science program without teaching at least once.
         </span>
@@ -118,13 +117,13 @@ export function JonckersDesc() {
 export function EducationDesc() {
     return (
         <div>
-            <Col className='col-1 mb-3 container'>
+            <Col className='col-lg-2 col-md-2 col-4 mb-3 container'>
                 <Image src={uw} fluid />
             </Col>
             I studied computer science at the University of Washington (UW) Seattle campus,
             Paul G. Allen School of Computer Science and Engineering. I tackled the standard
             12 quarters (12 x 10 = 120 weeks, plus final exams) at the UW from Fall 2018 to
-            Spring 2022, in total earning a final GPA of 3.64 (B+ or A- range). After 7
+            Spring 2022, in total earning a final GPA of 3.64 (A- range). After 7
             quarters with the declared pre-science major, I was given general admission to
             the school of computer science. Had I not been admitted, I would most likely
             have studied the math major. <BR />
@@ -133,20 +132,19 @@ export function EducationDesc() {
             CSE 143, and a 2.6 (C letter grade) in the intro math course Math 124. And for good
             reason. Many more-than-qualified candidates are rejected from the school with
             better grades than mine, despite being outstanding, well-rounded, hardworking
-            students with bright futures.<BR />
-            My memory of UW is very bittersweet: on one hand,
-            I made amazing friendships and connections, and secured a software engineering
-            position at a FAANG company. On the other hand, thousands of applications
-            (and hundreds of good ones) are rejected every year with the excuse that there
-            "aren't enough spots" and this system causes a lot of stress for students
-            struggling for acceptance into any capacity-constrained major. <BR />
-            To be fair, the supply of professors is low
-            due to the nature of the industry (therefore the university is not entirely at
-            fault), and hardworking students can aim for the Info, Applied Math, regular Math,
-            and other STEM-related majors and succeed with enough luck and hard work. It is
-            still very difficult for students to enter any capacity-constrained major due
-            to "weed-out" courses, and the barrier for entry into STEM majors at UW Seattle
-            during my time there was unreasonably high.
+            students with bright futures. I went from mediocre grades in my first quarter to
+            stellar grades over my entire second year, and had plenty of extracurriculars,
+            but some students had great grades throughout their academic experience.<BR />
+            My opinion of UW is bittersweet: on one hand,
+            I made amazing friendships and connections, grew a lot,
+            and secured a software engineering position at a great company. On the other hand,
+            thousands of applications (and hundreds of good ones) are rejected every year
+            because there aren't enough spots in the program.
+            This system causes a lot of stress for students
+            struggling for acceptance into any capacity-constrained major. If the admissions system
+            were more fair and lenient in accepting students with good academic standing and a
+            passion for computing, it
+            would be just about the perfect school for any prospective computer scientist or engineer.
         </div>
     )
 }
@@ -170,7 +168,7 @@ export function PuffinDesc() {
     return (
         <span>
             <Row>
-                <Col className='col-5 container'>
+                <Col className='col-lg-5 col-md-5 container'>
                     <Image src={puffin} fluid thumbnail />
                 </Col>
             </Row>
@@ -196,11 +194,11 @@ export function PuffinDesc() {
     )
 }
 
-export function UnlikeDesc() {
+export function OtherDesc() {
     return (
         <span>
-            Unlike some peers, I do not build keyboards, I'm not handy, and I'm not a
-            rock-climber :)
+            Other random things: I'm a huge Pokemon Emerald, Pearl, and Ex of Sky fan,
+            I love all the Ghibli movies, I read lots of WebToons, 
         </span>
     )
 }
