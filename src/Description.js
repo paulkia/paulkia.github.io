@@ -197,23 +197,35 @@ export function PuffinDesc() {
 export function OtherDesc() {
     return (
         <span>
-            Other random things: I'm a huge Pokemon Emerald, Pearl, and Ex of Sky fan,
-            I love all the Ghibli movies, I read lots of WebToons, 
+            Other random things: I'm a huge
+            Pokemon <Link address={links['emerald']} text='Emerald' />
+            , <Link address={links['pearl']} text='Pearl' />,
+            and <Link address={links['sky']} text='Ex of Sky' /> fan,
+            I love all the <Link address={links['ghibli']} text='Ghibli' /> movies,
+            I read lots of <Link address={links['webtoon']} text='WebToons' />,
+            and am a proud owner of a
+            lovely <Link address={links['appartamento']} text='Rocket Appartamento' /> machine.
         </span>
     )
 }
 
 const links = {
+    appartamento: 'https://rocket-espresso.com/appartamento.html',
     birdboozled: 'https://www.instagram.com/birdboozled/',
+    emerald: 'https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Emerald_Version',
     fakeymon: 'https://github.com/paulkia/Fakeymon2',
     kernelFilm: 'https://www.instagram.com/kernelfilm/',
+    ghibli: 'https://en.wikipedia.org/wiki/Studio_Ghibli',
     maxime: 'https://github.com/MaxDahan',
     paulGithub: 'https://www.github.com/paulkia/',
     paulLinkedIn: 'https://www.linkedin.com/in/paulkia/',
+    pearl: 'https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Diamond_and_Pearl_Versions',
     portfolio: 'https://github.com/paulkia/paulkia.github.io',
     puffin: 'https://ebird.org/species/atlpuf',
+    sky: 'https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Mystery_Dungeon:_Explorers_of_Sky',
     spaceship: 'https://github.com/MaxDahan/Spaceship',
     reactBootstrap: 'https://react-bootstrap.github.io/',
+    webtoon: 'https://www.webtoons.com/en/',
 }
 
 function BR() {
