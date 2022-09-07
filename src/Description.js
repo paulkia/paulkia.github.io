@@ -46,6 +46,62 @@ export function SpaceshipDesc() {
     )
 }
 
+export function JavaCppDesc() {
+    return (
+        <span>
+            I've written a few thousand lines of Java code, most notably in
+            my <Link address={links['fakeymon']} text='Fakeymon' /> projects.
+            The majority of code I wrote in college was written in Java, and I am quite
+            well-versed with using it for practical applications. I have fairly
+            thorough knowledge of the logic behind common Java data structures and
+            their time complexities. When solving interview problems, Java is always
+            my language of choice, and I would be very comfortable with using it
+            in a professional setting. <BR />
+            In my experience, C++ in a practical setting is quite similar to Java aside from
+            syntax differences, garbage collection and header files. I've written at
+            least 500 lines of code in C++ and would be comfortable using it in a
+            professional setting as well. I am also (slightly less) proficient in C.
+        </span>
+    )
+}
+
+export function JSDesc() {
+    return (
+        <span>
+            I'm comfortable working with Javascript, Typescript, React, HTML + CSS when
+            working on my own projects. But front-end in general is
+            such a frankenstein of languages and often requires lots of messy CSS,
+            so I find it a bit frustrating to work on. I've been tasked with writing
+            front-end applications in prior internships and thus I'm more interested
+            in working on backend applications professionally.
+        </span>
+    )
+}
+
+export function OtherDesc() {
+    return (
+        <span>
+            I've used the following languages before, from 10 to 500 lines of code in
+            each, but I have not used them on a large-scale project or professionally.
+            While I'm familiar with them, it would take a while for me to get back
+            up-to-speed and become effective programming with them:
+            <ul>
+                <li>Assembly</li>
+                <li>C# (though it's very similar to Java, from my experience)</li>
+                <li>Datalog/prolog</li>
+                <li>Julia</li>
+                <li>Matlab</li>
+                <li>Python, Python3</li>
+                <li>SML (Standard Meta-Language)</li>
+                <li>SQL/SQLite</li>
+                <li>Racket/DrRacket</li>
+                <li>Ruby</li>
+                <li>Rust</li>
+            </ul>
+        </span>
+    )
+}
+
 export function GoogleDesc() {
     return (
         <span>
@@ -197,7 +253,7 @@ export function PuffinDesc() {
     )
 }
 
-export function OtherDesc() {
+export function OtherHobbiesDesc() {
     return (
         <span>
             Other random things: I'm a huge
