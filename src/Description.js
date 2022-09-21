@@ -103,9 +103,17 @@ export function OtherDesc() {
 }
 
 export function GoogleDesc() {
+    const start = new Date(2022, 8, 19), end = new Date() // today
+    const m = (start.getDate() > end.getDate() ? 0 : 1) +
+        end.getMonth() - start.getMonth() +
+        12 * (end.getFullYear() - start.getFullYear()) // account for different years
+    const y = Math.floor(m / 12);
     return (
         <span>
-            September 2022 - Present
+            September 2022 - Present (
+                {y + ' year' + (y === 1 ? '' : 's')},
+                {' ' + m % 12 + ' month' + (m % 12 === 1 ? '' : 's')}
+            )
         </span>
     )
 }

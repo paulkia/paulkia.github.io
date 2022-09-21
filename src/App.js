@@ -144,6 +144,6 @@ function App() {
 
 /* UTIL */
 
-const age = new Date(new Date() - new Date(2000, 9, 27)).getFullYear() - 1970
+const age = new Date(new Date() - new Date(2000, 8, 27)).getFullYear() - 1970
 
 export default App;
